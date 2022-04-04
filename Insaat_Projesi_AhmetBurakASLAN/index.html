@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnşaat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div id="menu">
+            <h1><a class="baslik" href="">Wissen İnsaat</a></H1>
+            <ul style="padding-left: 200px;">
+
+                <li><a href="#">Menü 1</a></li>
+
+                <li><a href="#">Menü 2</a></li>
+
+                <li><a href="#">Menü 3</a>
+                    <ul>
+                        <li><a href="#">Alt Menü 1</a></li>
+                        <li><a href="#">Alt Menü 2</a>
+                            <ul>
+                                <li><a href="#">Alt Menü 2-1</a></li>
+                                <li><a href="#">Alt Menü 2-2</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Alt Menü 3</a>
+                            <ul>
+                                <li><a href="#">Alt Menü 3-1</a></li>
+                                <li><a href="#">Alt Menü 3-2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <form class="arama">
+                    <input class="form-control me-2" type="search" placeholder="Ara..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Ara</button>
+            </ul>
+
+
+        </div>
+    </nav>
+    <div class="sliderContent ">
+
+        <div class="slide fade1">
+            <img src="./slider/slider1.png" alt="">
+            <div class="captionText">
+                <h1 class="captionTextH">Morbius-Slider</h1>
+                <!-- <div class="captionText">Resim1</div> -->
+            </div>
+        </div>
+        <div class="slide fade1">
+            <img src="./slider/slider2.jpg" alt="">
+            <div class="captionText">
+                <h1 class="captionTextH">Morbius-Slider</h1>
+                <!-- <div class="captionText">Resim1</div> -->
+            </div>
+
+        </div>
+        <div class="slide fade1">
+            <img src="./slider/slider3.jpg" alt="">
+            <div class="captionText">
+                <h1 class="captionTextH">Morbius-Slider</h1>
+                <!-- <div class="captionText">Resim1</div> -->
+            </div>
+        </div>
+        <div class="slide fade1">
+            <img src="./slider/slider4.jpg" alt="">
+            <div class="captionText">
+                <h1 class="captionTextH">Morbius-Slider</h1>
+                <!-- <div class="captionText">Resim1</div> -->
+            </div>
+
+        </div>
+        <a class="prevSlide">&#10094</a>
+        <a class="nextSlide">&#10095</a>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+    <div class="popup-container">
+            
+        <span id="popup-text" class="popup-text">Popup İçeriği</span>
+    </div>
+    <button id="popup-btn">Tıkla!</button>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
