@@ -1,0 +1,108 @@
+body{
+    background-color: aliceblue;
+    display: block;
+}
+
+.sliderContent{
+    margin-top: 30px;
+    max-width: 1330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.slide{
+    width: 1349px;
+}
+    
+ .sliderContent .slide img{
+        width: 100%
+}
+.sliderContent .prevSlide,
+.sliderContent .nextSlide{
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+    border-radius: 0px 3px 3px 0px;
+    transition: 0.6s ease;
+    color: green;
+}
+
+.sliderContent .prevSlide:hover,
+.sliderContent .nextSlide:hover{
+        background-color: rgba(0, 0, 0, 0.6);
+        text-decoration: none;
+}
+
+.sliderContent .nextSlide{
+    right:0px;
+    border-radius: 0px 30px 3px 30px;
+    color: green;
+}
+.sliderContent .prevSlide{
+    left:0px;
+    border-radius: 0px 30px 3px 30px;
+    color: green;
+}
+.dots{
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    margin: 0px;
+}
+
+.dots .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin:0 3px;
+    background-color: bisque;
+    border-radius:50%;
+    display: inline-block;
+}
+.dots .dot:hover {
+    background-color: red;
+    transition: 0.4s;
+}
+
+.active{
+    background-color: blue !important;
+}
+
+.captionText{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    margin: 20px 15px;
+}
+.captionText .captionTextH {
+    font-size: large;
+    cursor: pointer;
+    height: 25px;
+    width: 60px;
+    margin:0 10px;
+    background-color: bisque;
+    border-radius:10%;
+    display: inline;
+    right: 100px;
+    
+}
+.fade1{
+    animation-name: fade1;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade1{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+} 
+
+    
