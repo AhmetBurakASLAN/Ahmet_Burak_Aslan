@@ -164,3 +164,27 @@ a.linkedin {
     a.linkedin:hover {
         background-color: rgb(1, 116, 179) !important;
     }
+
+/*-----------------------------GAZETE DUVAR-----------------*/
+    .box{
+        margin-bottom: 18.75px;
+        display:block;
+        background-color:white;
+        width:100%;
+    }
+
+.box .image_top-text_bottom{
+    display: block;
+    background-color: #222325;
+    color: white;
+}
+
+.swiper-container{
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    overflow:hidden;
+    list-style:none;
+    padding:0px;
+    z-index:1;
+}
