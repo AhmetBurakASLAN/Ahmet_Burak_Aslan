@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <title>@ViewBag.Title - Mobilya Show Room</title>
+</head>
+<body>
+
+    <header>
+        <div class="top">
+            <div class="banner container-fluid">
+                <div class="container d-flex justify-content-between align-items-center" style="height: 70px;">
+                    <img class="h-75 m-2" src="https://s.gazeteduvar.com.tr/assets/web/images/header-logo.svg" alt="">
+                    <div class="icon d-flex gap-2 m-2">
+                        <i><img src="/icon/instagram (2).png" alt="" srcset=""></i>
+                        <i><img src="/icon/twitter.png" alt="" srcset=""></i>
+                        <i><img src="/icon/facebook.png" alt="" srcset=""></i>
+                        <i><img src="/icon/youtube.png" alt="" srcset=""></i>
+                        <i><img src="/icon/telegram.png" alt="" srcset=""></i>
+                        <i><img src="/icon/youtube.png" alt="" srcset=""></i>
+                        <i><img src="/icon/telegram.png" alt="" srcset=""></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" style="background-color: #f06730;  padding-top: 70px;">
+                <nav class="navbar navbar-expand-lg navbar-dark container" style="height: 36px;">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 d-flex justify-content-between">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Gündem</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Politika</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dünya</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Yerel Haber</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kitap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dergi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Yazarlar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Duvar English</a>
+                            </li>
+                        </ul>
+
+                    </div>
+            </div>
+            </nav>
+        </div>
+
+    </header>
+    <section>
+        @RenderBody()
+    </section>
+    <footer >
+        <div class="footer-top">
+            <div class="container d-flex justify-content-sm-around align-items-center">
+                <div class="left-side">
+                    <a href="https://www.facebook.com/rem.mcintosh" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
+
+                    <a href="https://twitter.com/Mouse0270" class="[ social-icon twitter ] animate"><span class="fa fa-twitter"></span></a>
+
+                    <a href="https://github.com/mouse0270" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
+
+                    <a href="https://plus.google.com/u/0/115077481218689845626/posts" class="[ social-icon google-plus ] animate"><span class="fa fa-google-plus"></span></a>
+
+                    <a href="www.linkedin.com/in/remcintosh/" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+                </div>
+                <div class="right-side">
+                    <span>
+                        Gazete Duvar mobil uygulamasını indirin, <span>haber cebinize gelsin djf jf jdf jdk fjkdf</span>
+                    </span>
+                    <a href="https://play.google.com/store/apps/details?id=tr.com.gazeteduvar.duvarmobile&amp;gl=TR" target="_blank" title="Gazete DuvarAndroid Uygulaması"><span class="icon-googleplay"></span></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+   
+    <script src="~/js/jquery-3.6.0.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

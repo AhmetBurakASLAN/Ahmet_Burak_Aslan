@@ -1,0 +1,56 @@
+﻿@using MobilyaShowRoom.Models;
+
+@{
+    Layout = "_Layout";
+
+}
+
+@{
+    Product product = ViewBag.Product;
+
+    <section class="bg-primary text-white w-50 auto">
+
+        
+        <div class="container">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="[ col-sm-6 col-md-offset-2 col-md-4 ]">
+                        <div class="[ info-card ]">
+                            <img style="width: 100%" src="./img/11.jpg" />
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-header ]">
+                                    <h1> @product.ProductName</h1>
+                                    <h3>@product.ID</h3>
+                                </div>
+                                <div class="[ info-card-detail ]">
+                                    <!-- Description -->
+                                    <div>
+                                        <p style="color:black">@product.ProductDetail</p><br />
+                                        <h1 style="background-color:red;font-size:30px;">@product.Price</h1>
+
+                                    </div>
+
+                                    <div class="social">
+                                        <a href="https://www.facebook.com/rem.mcintosh" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
+
+                                        <a href="https://twitter.com/Mouse0270" class="[ social-icon twitter ] animate"><span class="fa fa-twitter"></span></a>
+
+                                        <a href="https://github.com/mouse0270" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
+
+                                        <a href="https://plus.google.com/u/0/115077481218689845626/posts" class="[ social-icon google-plus ] animate"><span class="fa fa-google-plus"></span></a>
+
+                                        <a href="www.linkedin.com/in/remcintosh/" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </section>
+    
+}
