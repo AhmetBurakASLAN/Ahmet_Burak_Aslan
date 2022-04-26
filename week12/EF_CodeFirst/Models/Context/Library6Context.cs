@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Models.Entities;
+using EF_CodeFirst.Models.Entities;
 
-namespace Models.Context
+
+namespace EF_CodeFirst.Models.Context
 {
     public class Library6Context:DbContext
     {

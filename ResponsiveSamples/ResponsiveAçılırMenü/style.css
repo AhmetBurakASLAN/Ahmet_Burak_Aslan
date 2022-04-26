@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+body{
+    background:url("bg.jpg") no-repeat fixed;
+}
+.slider{
+    scroll-margin-top:80px;
+    /* padding-top: 80px; */
+	
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.content{
+    padding-top:100px;
+	
+    color:rgb(255, 255, 255);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content p{
+    width: 80%;
+    margin: 2rem; 
+}
+
+.content h1{
+    width: 80%;
+    margin:left 2rem right 2rem;
+    background-color: coral;
+    color: darkblue;
+    text-align: center;
+    margin:0px auto;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px;
+}
+nav{
+    position: sticky;
+	position: -webkit-sticky;
+	top:0px;
+    background-color: #457b9d;
+    width: 100%;
+    height: 80px;
+}
+
+nav #menuBtn{
+    display: none;
+}
+
+nav .menuBtnLabel{
+    font-size: 2rem;
+    color: #F1FAEE;
+    float: right;
+    line-height: 80px;
+    margin-right: 2rem;
+    cursor:pointer;
+    display: none;
+}
+nav .logo{
+    color: #F1FAEE;
+    font-size: 1.4rem;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    padding:0 2rem;
+}
+
+nav ul{
+    float:right;
+    margin-right: 2rem;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    line-height: 80px;
+    margin:0 .2rem;
+}
+
+nav ul li a{
+    color:#F1FAEE;
+    font-size:.8rem;
+    padding:.5rem;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+nav ul li a.active{
+    background-color: #E63946;
+}
+nav ul li a:hover{
+    background-color: #1D3557;
+}
+@media (max-width:970px){
+    nav .menuBtnLabel{
+        display: initial;
+    }
+    nav ul{
+        position: fixed;
+        background-color: #457b9d;
+        width:100%;
+        top:80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s;
+        left:-100%
+    }
+    nav ul li{
+        display: block;
+        min-width: 80%;
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    nav ul li a{
+        display: block;
+        font-size:1.2rem;
+    }
+
+    nav #menuBtn:checked ~ ul{
+        left:0;
+    }
+
+    nav #menuBtn:checked ~ label.menuBtnLabel i::before{
+        content: "\f00d";
+    } 
+}
+
+@media (max-width:399px){
+    nav .logo{
+        font-size:1.5rem;
+    }
+
+    nav ul li a{
+        padding:0;
+    }
+}
