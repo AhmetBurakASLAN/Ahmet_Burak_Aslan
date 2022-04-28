@@ -1,0 +1,34 @@
+@model Kitaplar
+@{
+    ViewData["Title"] = @Model.Ad + "adlı kitabın detayları" ;   
+}
+
+<h3>@Model.Ad adlı  kitabun detayları</h3>
+<hr>
+<div>
+                 <h6>Kitap ISBN: </h6>
+                     <p>@Model.Isbn</p>
+                <h6>Kitap Adı: </h6>
+            <p>@Model.Ad</p>
+                <h6>Kitap Sayfa Sayısı: </h6>
+                  <p>@Model.SayfaSayisi</p>
+                <h6>Kitap Stok: </h6>
+                    <p>@Model.Stok</p>
+                <h6>Kitap Türü: </h6>
+                        <p>@Model.Tur.TurAd</p>
+                <h6>Kitap Yazar: </h6>
+                
+                <p>@Model.Yazar.AdSoyad</p>
+                <h6>Kitap Yayinevi: </h6>
+                <p>@Model.YayinEvi.Ad</p>
+
+
+                   
+                
+              
+                
+               
+              
+</div>
+
+<a asp-action="index">Kitaplar Sayfasına Geri Git</a>

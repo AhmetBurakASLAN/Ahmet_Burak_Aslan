@@ -1,0 +1,23 @@
+@model EF_Core_MVC_Code.Models.Turler
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Kitap Türü Detayları</h1>
+<div>
+    <table class="table-dark">
+        <thead>
+            <tr>
+                <th>Tür ID: </th>
+                <th>Kitap Türü: </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>@Model.Id</th>
+                <th>@Model.TurAd</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<a asp-action="index">Kitap Türleri Sayfasına Geri Git</a>

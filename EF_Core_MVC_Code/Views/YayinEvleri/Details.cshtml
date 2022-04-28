@@ -1,0 +1,27 @@
+@model EF_Core_MVC_Code.Models.Yayinevleri
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Yayinevi Detayları</h1>
+<div>
+    <table class="table-dark">
+        <thead>
+            <tr>
+                <th>Yayınevi ID </th>
+                <th>Yayınevi Adı </th>
+                <th>Yayınevi Adresi </th>
+                <th>Yayınevi Telefonu </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>@Model.Id</th>
+                <th>@Model.Ad</th>
+                <th>@Model.Adres</th>
+                <th>@Model.Tel</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<a asp-action="index">Yayinevleri Sayfasına Geri Git</a>
