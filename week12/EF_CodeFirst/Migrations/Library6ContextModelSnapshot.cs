@@ -4,7 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+<<<<<<< HEAD
 using Models.Context;
+=======
+using EF_CodeFirst.Models.Context;
+>>>>>>> 10d74529ebaea9dfbee832cf407b9536a430d162
 
 namespace EF_CodeFirst.Migrations
 {

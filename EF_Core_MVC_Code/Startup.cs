@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+<<<<<<< HEAD
 using Microsoft.EntityFrameworkCore;
+=======
+>>>>>>> 10d74529ebaea9dfbee832cf407b9536a430d162
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,7 +28,11 @@ namespace EF_Core_MVC_Code
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+<<<<<<< HEAD
         services.AddDbContext<Models.KutuphaneSabahContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+=======
+            services.AddControllersWithViews();
+>>>>>>> 10d74529ebaea9dfbee832cf407b9536a430d162
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -3,9 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+<<<<<<< HEAD
 using Models.Entities;
 
 namespace Models.Context
+=======
+using EF_CodeFirst.Models.Entities;
+
+
+namespace EF_CodeFirst.Models.Context
+>>>>>>> 10d74529ebaea9dfbee832cf407b9536a430d162
 {
     public class Library6Context:DbContext
     {

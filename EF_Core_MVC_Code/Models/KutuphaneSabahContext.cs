@@ -29,7 +29,11 @@ namespace EF_Core_MVC_Code.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+<<<<<<< HEAD
                 optionsBuilder.UseSqlServer("Server=DESKTOP-8M7D7GE\\SQLEXPRESS; Database=KutuphaneSabah; User=sa; pwd=123;");
+=======
+                optionsBuilder.UseSqlServer("Server=DESKTOP-OVE5E20\\SQLEXPRESS; Database=KutuphaneSabah; Trusted_Connection=true;");
+>>>>>>> 10d74529ebaea9dfbee832cf407b9536a430d162
             }
         }
 
@@ -40,7 +44,11 @@ namespace EF_Core_MVC_Code.Models
             modelBuilder.Entity<Kitaplar>(entity =>
             {
                 entity.HasKey(e => e.Isbn)
+<<<<<<< HEAD
                     .HasName("PK__Kitaplar__447D36EB9D4499C3");
+=======
+                    .HasName("PK__Kitaplar__447D36EB83FB7648");
+>>>>>>> 10d74529ebaea9dfbee832cf407b9536a430d162
 
                 entity.ToTable("Kitaplar");
 
@@ -111,7 +119,11 @@ namespace EF_Core_MVC_Code.Models
             {
                 entity.ToTable("Turler");
 
+<<<<<<< HEAD
                 entity.HasIndex(e => e.TurAd, "UQ__Turler__A1D0193DD64654E3")
+=======
+                entity.HasIndex(e => e.TurAd, "UQ__Turler__A1D0193DE68DBD96")
+>>>>>>> 10d74529ebaea9dfbee832cf407b9536a430d162
                     .IsUnique();
 
                 entity.Property(e => e.Id).HasColumnName("ID");
@@ -160,7 +172,11 @@ namespace EF_Core_MVC_Code.Models
             {
                 entity.ToTable("Yayinevleri");
 
+<<<<<<< HEAD
                 entity.HasIndex(e => e.Ad, "UQ__Yayinevl__3214AD0045EFFE43")
+=======
+                entity.HasIndex(e => e.Ad, "UQ__Yayinevl__3214AD002796781E")
+>>>>>>> 10d74529ebaea9dfbee832cf407b9536a430d162
                     .IsUnique();
 
                 entity.Property(e => e.Id).HasColumnName("ID");

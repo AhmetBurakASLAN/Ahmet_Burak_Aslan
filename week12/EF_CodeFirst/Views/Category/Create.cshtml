@@ -1,0 +1,30 @@
+@model EF_CodeFirst.Models.Entities.Category
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="display-3">Yeni Kategori</h1>
+
+<div class="row">
+    <div class="col-md-4 m-auto">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label  class="control-label">Kategori</label>
+               
+                <input type="text" asp-for="CategoryName" clas="form-control">
+            </div>
+             <div class="form-group">
+                <label  class="control-label">Kategori Açıklaması</label>
+               
+                <input type="text" asp-for="CategoryDescription" clas="form-control">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-success">
+            </div>
+        </form>
+    </div>
+    <div>
+        <a asp-action="Index">Kitap Tür Listesine Geri Dön</a>
+    </div>
+
+</div>

@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+<<<<<<< HEAD
+=======
+using EF_CodeFirst.Models.Context;
+>>>>>>> 10d74529ebaea9dfbee832cf407b9536a430d162
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -9,7 +13,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+<<<<<<< HEAD
 using Models.Context;
+=======
+
+>>>>>>> 10d74529ebaea9dfbee832cf407b9536a430d162
 
 namespace EF_CodeFirst
 {

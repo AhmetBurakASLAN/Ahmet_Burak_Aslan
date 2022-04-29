@@ -5,8 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.15">
+=======
+    <PackageReference Include="Microsoft.EntityFrameWorkCore.SqlServer" Version="5.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameWorkCore.Tools" Version="5.0.15">
+>>>>>>> 10d74529ebaea9dfbee832cf407b9536a430d162
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
